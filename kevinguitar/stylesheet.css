@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.bodydiv {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    z-index: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 98px;
+    width: inherit;
+    max-width: inherit;
+    background-image: url("./pics/pic3.jpg");
+    background-position: bottom;
+    background-size: cover;
+    margin: 0 auto;
+    border-bottom: 2px #ffecdb solid;
+    z-index: 5;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 60%;
+}
+
+.navbtn {
+    font-family: Helvetica;
+    font-weight: 100;
+    margin: auto 0;
+    text-align: center;
+    font-size: 32px;
+    color: #ffecdb;
+    filter: drop-shadow(0px 0px 4px  #ffecdb);
+    text-decoration-line: none;
+}
+
+#btn1 {
+    grid-column: 1;
+}
+
+#btn2 {
+    grid-column: 2;
+}
+
+#btn3 {
+    grid-column: 3;
+}
+
+main {
+    padding-top: 50px;
+}
+
+.banner {
+    display: relative;
+    height: 800px;
+    background-image: url("./pics/pic2.jpg");
+    background-position: 0% 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 2px #ffecdb solid;
+}
+
+.title {
+    font-style: italic;
+    font-weight: lighter;
+    font-family: Helvetica;
+    color: #ffecdb;
+    padding-left: 10vmin;
+    padding-top: 10vmin;
+    font-size: 4.8vmin;
+    filter: drop-shadow(5px 5px 4px black);
+    filter: drop-shadow(10px 10px 4px black);
+
+}
+
+#name {
+    color: #ffecdb;
+    font-style: normal;
+    font-family: Georgia;
+    font-weight: bolder;
+    font-size: 7vmin;
+
+}
+
+.featureheader {
+    height: 150px;
+    width: inherit;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./pics/pic7.jpg");
+    background-position: 40% 100%;
+    background-size: cover;
+    border-bottom: 2px #ffecdb solid;
+}
+
+.featurebody {
+    width: 100%;
+    font-family: Georgia;
+}
+
+.featurebody::after {
+    content: "";
+  background-image: url("./pics/texture3.jpg");
+  background-size: 100%;
+  background-repeat: round;
+  background-position: center;
+  height: auto;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.features {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-auto-rows: min-content;
+    padding-bottom: 80px;
+}
+
+.biotext {
+    font-family: Georgia;
+    color: #ffecdb;
+    font-size: 2.2vw;
+    grid-column: 1/3;
+    grid-row: 2/4;
+    padding-right: 100px;
+    text-align: justify;
+    filter: drop-shadow(3px 3px 7px black);
+}
+
+
+.biotext2 {
+    font-family: Georgia;
+    color: #ffecdb;
+    font-size: 2.2vw;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    padding-left: 100px;
+    text-align: justify;
+    filter: drop-shadow(3px 3px 7px black);
+}
+
+.pop {
+    font-family: Helvetica;
+    font-size: 50px;
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+    filter: drop-shadow(1px 1px 15px black);
+}
+
+.livepic {
+    border: 3px solid #ffecdb;
+    grid-column: 3;
+    grid-row: 2/4;
+    background-image: url("./pics/live.jpg");
+    background-size: cover;
+    z-index: 0;
+}
+
+.profilepic {
+    border: 3px solid #ffecdb;
+    grid-column: 1;
+    grid-row: 2/4;
+    background-image: url("./pics/pic9.jpg");
+    background-size: cover;
+    z-index: 0;
+}
+
+.contactpic {
+    border: 3px solid #ffecdb;
+    grid-column: 3;
+    grid-row: 2/4;
+    background-image: url("./pics/pic3.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.video {
+    margin: auto;
+    margin-top: 50px;
+    grid-column: 1/4;
+    grid-row: 4/7;
+    height: 60vh;
+    width: 90%;
+    z-index: 10;
+    border: 3px solid #ffecdb;
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    height: 98px;
+    width: inherit;
+    max-width: inherit;
+    background-image: url("./pics/pic3.jpg");
+    background-position: bottom;
+    background-size: cover;
+    margin: 0 auto;
+    border-top: 2px #ffecdb solid;
+}
+
+.footertext {
+    display: block;
+    filter: drop-shadow(0px 0px 4px  #ffecdb);
+    font-family: Helvetica;
+    margin: auto 0;
+    color:  #ffecdb;
+    padding-left: 10%;
+    padding-top: 32px;
+    font-size: 25px;
+}
